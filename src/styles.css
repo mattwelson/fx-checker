@@ -138,6 +138,7 @@
   --ring: var(--lime-500);
   --muted: var(--neutral-600);
   --muted-foreground: var(--neutral-200);
+  --border: var(--neutral-500);
 
   /* TODO: which can be changed to semantic tokens */
   --card: oklch(1 0 0);
@@ -148,7 +149,6 @@
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-  --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --radius: 0.625rem;
 }

@@ -53,3 +53,6 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+*storybook.log
+storybook-static
