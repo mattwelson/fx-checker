@@ -140,11 +140,12 @@
   --muted-foreground: var(--neutral-200);
   --border: var(--neutral-500);
 
+  --popover: var(--neutral-600);
+  --popover-foreground: var(--neutral-50);
+  --card: var(--neutral-600);
+  --card-foreground: var(--neutral-50);
+
   /* TODO: which can be changed to semantic tokens */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --accent: oklch(0.97 0 0);

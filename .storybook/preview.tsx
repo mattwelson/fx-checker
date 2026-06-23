@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/tanstack-react"
+import { definePreview } from "@storybook/tanstack-react"
 import { initialize, mswLoader } from "msw-storybook-addon"
 
 import "../src/styles.css"
@@ -6,7 +6,7 @@ import { mswHandlers } from "./msw-handlers"
 
 initialize({ onUnhandledRequest: "bypass" })
 
-const preview: Preview = {
+export default definePreview({
   loaders: [mswLoader],
   parameters: {
     controls: {
@@ -27,6 +27,4 @@ const preview: Preview = {
       handlers: mswHandlers,
     },
   },
-}
-
-export default preview
+})

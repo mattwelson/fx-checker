@@ -1,5 +1,6 @@
 import ArrowRightIcon from "@/assets/images/icon-arrow-right.svg?react"
 import StarIcon from "@/assets/images/icon-star.svg?react"
+import ChevronDownIcon from "@/assets/images/icon-chevron-down.svg?react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -31,11 +32,21 @@ export function HistoryItem({
         <div className="text-preset-3">{rate}</div>
         {/* TODO: triangle up, triangle down, colour for change */}
         <div
-          className={cn("text-preset-6 text-green-500", {
-            "text-red-500": change < 0,
-          })}
+          className={cn(
+            "flex items-center gap-2 text-preset-6 text-green-500",
+            {
+              "text-red-500": change < 0,
+            }
+          )}
         >
-          {change}%
+          {change !== 0 && (
+            <ChevronDownIcon
+              className={cn("rotate-180", {
+                "rotate-0": change < 0,
+              })}
+            />
+          )}
+          {Math.abs(change)}%
         </div>
       </div>
       {/* TODO: control variant or classNames based on if this is styled or not */}

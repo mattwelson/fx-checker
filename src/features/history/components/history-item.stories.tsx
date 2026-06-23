@@ -4,7 +4,6 @@ import { fn } from "storybook/test"
 
 const meta = {
   component: HistoryItem,
-  tags: ["autodocs"],
 } satisfies Meta<typeof HistoryItem>
 
 export default meta
@@ -18,5 +17,12 @@ export const Default: Story = {
     change: 0.16,
     favorited: false,
     onFavoriteClicked: fn(),
+  },
+}
+
+export const ChangeNegative: Story = {
+  args: {
+    ...Default.args,
+    change: -0.13,
   },
 }

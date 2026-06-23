@@ -1,10 +1,7 @@
-import type { StorybookConfig } from "@storybook/tanstack-react"
+import { defineMain } from "@storybook/tanstack-react/node"
 
-const config: StorybookConfig = {
-  stories: [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-  ],
+export default defineMain({
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@chromatic-com/storybook",
     "@storybook/addon-vitest",
@@ -13,6 +10,4 @@ const config: StorybookConfig = {
     "@storybook/addon-mcp",
   ],
   framework: "@storybook/tanstack-react",
-  staticDirs: ["../public"],
-}
-export default config
+})

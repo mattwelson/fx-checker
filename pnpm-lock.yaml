@@ -32,6 +32,9 @@ importers:
       '@tanstack/router-plugin':
         specifier: latest
         version: 1.168.18(@tanstack/react-router@1.170.16(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(vite@8.0.16(@types/node@22.19.21)(esbuild@0.28.1)(jiti@2.7.0))
+      '@xstate/store-react':
+        specifier: ^2.0.0
+        version: 2.0.0(react@19.2.7)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -2918,6 +2921,14 @@ packages:
 
   '@webcontainer/env@1.1.1':
     resolution: {integrity: sha512-6aN99yL695Hi9SuIk1oC88l9o0gmxL1nGWWQ/kNy81HigJ0FoaoTXpytCj6ItzgyCEwA9kF1wixsTuv5cjsgng==}
+
+  '@xstate/store-react@2.0.0':
+    resolution: {integrity: sha512-i8rXkUHfZqHUijgA/IORXDESAuHwO939jHIsEtf3nitJkOy1AcZ73DMaAlLqH03nVS082PJkUZFRAu5nwb9Fxg==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+
+  '@xstate/store@4.2.0':
+    resolution: {integrity: sha512-ZJYkKKkwRIQP6r5w0Uj1y8QlYqowUez/OUCLGc3opXYZP/bOvm+rrGq1i7T81jqN9EqYntqrr/bM0+uoGIiDSQ==}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -8138,6 +8149,13 @@ snapshots:
       tinyrainbow: 3.1.0
 
   '@webcontainer/env@1.1.1': {}
+
+  '@xstate/store-react@2.0.0(react@19.2.7)':
+    dependencies:
+      '@xstate/store': 4.2.0
+      react: 19.2.7
+
+  '@xstate/store@4.2.0': {}
 
   accepts@2.0.0:
     dependencies:
