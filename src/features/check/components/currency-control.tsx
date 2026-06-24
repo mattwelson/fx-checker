@@ -23,7 +23,7 @@ import {
 
 const ITEMS = [
   {
-    label: "Popular currencies",
+    label: "Popular",
     items: popularCurrencies,
   },
   {
@@ -49,7 +49,7 @@ export function CurrencyControl({
     <Combobox items={ITEMS}>
       <ComboboxTrigger
         render={
-          <Button className="flex items-center gap-2 text-preset-4">
+          <Button className="flex items-center gap-2 bg-neutral-500 text-preset-4">
             <img src={currency.flag} className="size-5 rounded-full" />
             {currency.currencyCode}
             <ChevronDownIcon />

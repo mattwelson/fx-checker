@@ -75,17 +75,17 @@
 
   --text-preset-3: 1rem;
   --text-preset-3--line-height: 1.2;
-  --text-preset-3--letter-spacing: -0.0625rem;
+  --text-preset-3--letter-spacing: 0.0625rem;
   --text-preset-3--font-weight: var(--font-weight-normal);
 
   --text-preset-3-medium: 1rem;
   --text-preset-3-medium--line-height: 1.2;
-  --text-preset-3-medium--letter-spacing: -0.0625rem;
+  --text-preset-3-medium--letter-spacing: 0.0625rem;
   --text-preset-3-medium--font-weight: var(--font-weight-medium);
 
   --text-preset-3-bold: 1rem;
   --text-preset-3-bold--line-height: 1.1;
-  --text-preset-3-bold--letter-spacing: -0.0625rem;
+  --text-preset-3-bold--letter-spacing: 0.0625rem;
   --text-preset-3-bold--font-weight: var(--font-weight-bold);
 
   --text-preset-4: 0.875rem;
