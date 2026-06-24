@@ -46,7 +46,14 @@ export function CurrencyControl({
   if (!currency) return null
 
   return (
-    <Combobox items={ITEMS}>
+    <Combobox
+      items={ITEMS}
+      value={currencyCode}
+      onValueChange={(value) => {
+        if (value === null) return
+        onChange(value)
+      }}
+    >
       <ComboboxTrigger
         render={
           <Button className="flex items-center gap-2 bg-neutral-500 text-preset-4">
@@ -82,7 +89,7 @@ export function CurrencyControl({
                     {(item: (typeof ITEMS)[number]["items"][number]) => (
                       <ComboboxItem
                         key={item.currencyCode}
-                        value={item.displayName}
+                        value={item.currencyCode}
                         className="flex gap-3"
                       >
                         <img src={item.flag} className="size-5 rounded-full" />
